@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Next Step</title>
+  </head>
+  <body>
+    <!-- хлебные крошки-->
+    <section class="breadcrumbs">
+      <div class="breadcrumbs__wrapper"><a href="page-main.html">Главная</a><svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.25 1L3.125 3.62815L5 6.2563L3 8.62815L1 11" stroke="#828282"/>
+</svg><a href="#">Корзина</a>
+      </div>
+    </section>
+    <!-- header-->
+    <header class="header">
+      <!--popup ВЫБОР ГОРОДА появляется при клике на название города в header-->
+      <div class="popup-take-city js_popup_take_city">
+        <div class="content-wrapper">
+          <div class="popup-take-city__title">
+            <div class="popup-take-city__title-arrow js_popup_take_city_title_arrow"></div><span> Выбор города</span>
+          </div>
+          <div class="popup-take-city__list-wrap">
+            <ul class="popup-take-city__list">
+              <li class="popup-take-city__list-item js_popup_take_city_list_item bold">Москва</li>
+              <li class="popup-take-city__list-item js_popup_take_city_list_item bold">Санкт-Петербург</li>
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">Б                    </div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Белгород</li>
+              </ul>
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">В</div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Волгоград</li>
+              </ul>
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">Е</div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Екатеринбург</li>
+              </ul>
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">Ж</div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Железногорск</li>
+              </ul>
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">К</div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Казань</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Калуга</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Краснодар</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Красногорск</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Красноярск</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Курск</li>
+              </ul>
+            </ul>
+            <ul class="popup-take-city__list">
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">Л                    </div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Липецк</li>
+              </ul>
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">Н</div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Новосибирск</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Нижний Новгород</li>
+              </ul>
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">О</div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Омск</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Орёл</li>
+              </ul>
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">П</div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Пермь</li>
+              </ul>
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">Р</div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Ростов-на-Дону</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Рязань</li>
+              </ul>
+              <ul class="popup-take-city__sublist">
+                <div class="popup-take-city__sublist-title">С</div>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Самара</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Саратов</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Сочи</li>
+                <li class="popup-take-city__list-item js_popup_take_city_list_item">Ставрополь</li>
+              </ul>
+            </ul>
+            <ul class="popup-take-city__list last">
+              <div class="popup-take-city__list-item-wrap">
+                <ul class="popup-take-city__sublist">
+                  <div class="popup-take-city__sublist-title">Т</div>
+                  <li class="popup-take-city__list-item js_popup_take_city_list_item">Тамбов</li>
+                  <li class="popup-take-city__list-item js_popup_take_city_list_item">Тверь</li>
+                  <li class="popup-take-city__list-item js_popup_take_city_list_item">Тольятти</li>
+                  <li class="popup-take-city__list-item js_popup_take_city_list_item">Тула</li>
+                  <li class="popup-take-city__list-item js_popup_take_city_list_item">Тюмень</li>
+                </ul>
+                <ul class="popup-take-city__sublist">
+                  <div class="popup-take-city__sublist-title">У                    </div>
+                  <li class="popup-take-city__list-item js_popup_take_city_list_item">Уфа</li>
+                </ul>
+                <ul class="popup-take-city__sublist">
+                  <div class="popup-take-city__sublist-title">Ч</div>
+                  <li class="popup-take-city__list-item js_popup_take_city_list_item">Челябинск</li>
+                  <li class="popup-take-city__list-item js_popup_take_city_list_item">Чита</li>
+                </ul>
+                <ul class="popup-take-city__sublist">
+                  <div class="popup-take-city__sublist-title">Я</div>
+                  <li class="popup-take-city__list-item js_popup_take_city_list_item">Ярославль</li>
+                </ul>
+              </div>
+              <div class="popup-take-city__list-search">
+                <div class="popup-take-city__list-search-title">Укажите ваш город</div>
+                <div class="popup-take-city__list-search-input">
+                  <input type="text" placeholder="Город" arial-label="введите название города">
+                  <button class="popup-take-city__list-search-input-button" arial-label="поиск города">
+                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0ZM8 15C4.134 15 1 11.866 1 8C1 4.134 4.134 1 8 1C11.866 1 15 4.134 15 8C15 11.866 11.866 15 8 15Z" fill="#4D4E4D"></path>
+                      <path d="M6.84953 3.64941L6.14453 4.35441L9.79453 7.99941L6.14953 11.6494L6.85453 12.3544L10.8495 8.35441C11.0434 8.15938 11.0434 7.84444 10.8495 7.64941L6.84953 3.64941Z" fill="#4D4E4D"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-wrapper">
+        <div class="header-top">
+          <div class="header-top__region">Ваш регион:<span class="js_header_top_region_city">Москва</span></div>
+          <div class="header-top__info"><a class="header-top__info-delivery" href="#">Доставка и оплата</a>
+            <div class="header-top__info-choice">
+              <div class="header-top__info-choice-quantity"><span>125</span></div>
+              <div class="header-top__info-choice-text">сейчас выбирают</div>
+            </div>
+            <div class="header-top__info-phone"><span>8 800 550 89 48</span>бесплатный звонок</div>
+          </div>
+          <div class="header-top__user"><a class="header-top__user-cabinet" href="#">
+              <svg width="19" height="18" viewbox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2175 11.67C15.1828 10.7137 13.9512 10.0058 12.6075 9.57725C14.0467 8.66115 14.9922 7.12797 14.9922 5.39432C14.9922 2.59544 12.5284 0.318359 9.5 0.318359C6.47162 0.318359 4.00781 2.59544 4.00781 5.39432C4.00781 7.12797 4.95332 8.66115 6.39253 9.57725C5.0488 10.0058 3.81722 10.7137 2.7825 11.67C0.988186 13.3284 0 15.5332 0 17.8784H1.48438C1.48438 13.7936 5.08016 10.4703 9.5 10.4703C13.9198 10.4703 17.5156 13.7936 17.5156 17.8784H19C19 15.5332 18.0118 13.3284 16.2175 11.67ZM9.5 9.0984C7.2901 9.0984 5.49219 7.43678 5.49219 5.39432C5.49219 3.35186 7.2901 1.69024 9.5 1.69024C11.7099 1.69024 13.5078 3.35186 13.5078 5.39432C13.5078 7.43678 11.7099 9.0984 9.5 9.0984Z" fill="black"></path>
+              </svg></a><a class="header-top__user-favorites" href="#"><span>3</span>
+              <svg width="20" height="17" viewbox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.8301 3.94937C18.5421 3.33311 18.1269 2.77466 17.6076 2.30528C17.088 1.8345 16.4753 1.46038 15.8029 1.20327C15.1057 0.93559 14.3579 0.798579 13.6029 0.800185C12.5438 0.800185 11.5104 1.06824 10.6123 1.57458C10.3975 1.6957 10.1934 1.82873 10 1.97368C9.80664 1.82873 9.60254 1.6957 9.3877 1.57458C8.48965 1.06824 7.45625 0.800185 6.39707 0.800185C5.63438 0.800185 4.89531 0.935207 4.19707 1.20327C3.52246 1.4614 2.91445 1.83271 2.39238 2.30528C1.87245 2.77413 1.45712 3.33271 1.16992 3.94937C0.871289 4.59073 0.71875 5.2718 0.71875 5.97272C0.71875 6.63393 0.864844 7.32294 1.15488 8.02386C1.39766 8.60962 1.7457 9.21722 2.19043 9.83077C2.89512 10.8017 3.86406 11.8144 5.06719 12.841C7.06094 14.5426 9.03535 15.7181 9.11914 15.7658L9.62832 16.0676C9.85391 16.2006 10.1439 16.2006 10.3695 16.0676L10.8787 15.7658C10.9625 15.7161 12.9348 14.5426 14.9307 12.841C16.1338 11.8144 17.1027 10.8017 17.8074 9.83077C18.2521 9.21722 18.6023 8.60962 18.843 8.02386C19.133 7.32294 19.2791 6.63393 19.2791 5.97272C19.2813 5.2718 19.1287 4.59073 18.8301 3.94937ZM10 14.497C10 14.497 2.35156 9.96778 2.35156 5.97272C2.35156 3.94937 4.1627 2.30925 6.39707 2.30925C7.96758 2.30925 9.32969 3.11939 10 4.30281C10.6703 3.11939 12.0324 2.30925 13.6029 2.30925C15.8373 2.30925 17.6484 3.94937 17.6484 5.97272C17.6484 9.96778 10 14.497 10 14.497Z" fill="#1E1E1E"></path>
+              </svg></a><a class="header-top__user-basket js_header_top_user_basket" href="#"><span>9</span>
+              <svg width="21" height="19" viewbox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.7188 14.2681H6.5625L3.28125 1.53125H1.3125M3.9375 3.95731H19.6875L17.7188 11.842H5.90625L3.9375 3.95731Z" stroke="#B11116" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M16.4062 17.9071C17.1311 17.9071 17.7188 17.364 17.7188 16.6941C17.7188 16.0242 17.1311 15.4811 16.4062 15.4811C15.6814 15.4811 15.0938 16.0242 15.0938 16.6941C15.0938 17.364 15.6814 17.9071 16.4062 17.9071Z" stroke="#B11116" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M7.875 17.9071C8.59987 17.9071 9.1875 17.364 9.1875 16.6941C9.1875 16.0242 8.59987 15.4811 7.875 15.4811C7.15013 15.4811 6.5625 16.0242 6.5625 16.6941C6.5625 17.364 7.15013 17.9071 7.875 17.9071Z" stroke="#B11116" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <div class="header-top__user-basket-text">
+                <p>Корзина</p>
+                <p>1 подарок</p>
+              </div>
+              <div class="header-top__user-basket-popup js_header_top_user_basket_popup">
+                <div class="header-top__user-basket-popup-title"> 
+                  <div class="header-top__user-basket-popup-title-text">Товаров в корзине</div>
+                  <div class="header-top__user-basket-popup-title-quantity">(1шт.)</div>
+                </div>
+                <div class="header-top__user-basket-popup-product">
+                  <div class="header-top__user-basket-popup-product-title"><img class="header-top__user-basket-popup-product-title-image" src="img/header-busket-popup.png" alt="товар">
+                    <div class="header-top__user-basket-popup-product-title-text">Кроссовки женские 
+                      <p>Badden</p>
+                    </div>
+                  </div>
+                  <div class="header-top__user-basket-popup-product-quantity">Кол-во: 1</div>
+                  <div class="header-top__user-basket-popup-product-price">6 797 ₽</div>
+                </div>
+                <div class="header-top__user-basket-popup-total">
+                  <div class="header-top__user-basket-popup-total-text">Итого:</div>
+                  <div class="header-top__user-basket-popup-total-price">6 797 ₽</div>
+                </div>
+                <div class="header-top__user-basket-popup-buttons">
+                  <button class="header-top__user-basket-popup-buttons-arrange">Оформить заказ</button>
+                  <button class="header-top__user-basket-popup-buttons-link">Открыть корзину</button>
+                </div>
+              </div></a></div>
+        </div>
+        <div class="header-bottom">
+          <div class="header-bottom__button">
+            <button class="header-bottom__button-menu js_header_bottom_button_menu">
+              <svg width="31" height="22" viewbox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1.4" x2="31" y2="1.4" stroke="#1E1E1E" stroke-width="1.2"></line>
+                <line y1="11.4" x2="31" y2="11.4" stroke="#1E1E1E" stroke-width="1.2"></line>
+                <line y1="21.4" x2="31" y2="21.4" stroke="#1E1E1E" stroke-width="1.2"></line>
+              </svg>
+            </button>
+            <button class="header-bottom__button-search js_header_bottom_button_search_mobile">
+              <svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.9253 20.9269L15.4769 13.6086C16.6402 12.1462 17.2724 10.3564 17.2778 8.47252C17.2843 6.21746 16.3901 4.10106 14.7668 2.50327C13.1434 0.905479 10.9773 0.0235328 8.67349 0.0185736C6.36966 0.0136145 4.19848 0.889037 2.56598 2.47701C0.930601 4.06497 0.0271377 6.18032 0.0206486 8.43537C0.0141677 10.6876 0.908314 12.8096 2.53166 14.4046C4.15499 16.0024 6.31824 16.8844 8.62494 16.8893C10.552 16.8935 12.383 16.2844 13.8848 15.1573L21.3332 22.4728C21.3551 22.4943 21.381 22.5113 21.4096 22.523C21.4382 22.5346 21.4689 22.5407 21.4998 22.5407C21.5308 22.5408 21.5615 22.5349 21.5902 22.5234C21.6188 22.5118 21.6449 22.4949 21.6668 22.4735L22.9244 21.2531C22.9464 21.2317 22.9638 21.2063 22.9758 21.1784C22.9877 21.1504 22.9939 21.1204 22.994 21.0902C22.9941 21.0599 22.9881 21.0299 22.9763 21.0019C22.9645 20.9738 22.9472 20.9484 22.9253 20.9269ZM13.1923 12.9176C11.9694 14.1044 10.3511 14.7561 8.63109 14.7524C6.91113 14.7487 5.2966 14.09 4.08052 12.898C2.86732 11.7032 2.20171 10.1215 2.20655 8.44008C2.21139 6.75863 2.8861 5.17703 4.10615 3.99026C5.32907 2.8035 6.94738 2.15183 8.66734 2.15553C10.3873 2.15924 12.0047 2.81506 13.2179 4.00988C14.4311 5.20469 15.0967 6.78636 15.0919 8.46781C15.087 10.1493 14.4123 11.7309 13.1923 12.9176Z" fill="#1E1E1E"></path>
+              </svg>
+            </button>
+          </div><a class="header-bottom__logo" href="page-main.html"><img src="img/logo.svg" alt="логотип"></a>
+          <nav class="header-bottom__list">
+            <ul> 
+              <li class="js_header_bottom_list_item"><a href="#">женщинам</a></li>
+              <li class="js_header_bottom_list_item"> <a href="#">мужчинам</a></li>
+              <li class="js_header_bottom_list_item"> <a class="js_header_bottom_list_item--blue" href="#">Новинки</a></li>
+              <li class="js_header_bottom_list_item"> <a href="#">широкая колодка</a></li>
+              <li class="js_header_bottom_list_item salons"> <a href="page-salons.html">Салоны</a></li>
+              <li class="js_header_bottom_list_item"> <a class="js_header_bottom_list_item--red" href="#">% Акции</a></li>
+            </ul>
+          </nav>
+          <div class="header-bottom__search"><span class="js_header_bottom_search_button"></span>
+            <input class="js_header_bottom_search_input" type="text" name="" placeholder="Поиск...">
+          </div>
+          <div class="header-top__user"><a class="header-top__user-cabinet" href="#">
+              <svg width="19" height="18" viewbox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2175 11.67C15.1828 10.7137 13.9512 10.0058 12.6075 9.57725C14.0467 8.66115 14.9922 7.12797 14.9922 5.39432C14.9922 2.59544 12.5284 0.318359 9.5 0.318359C6.47162 0.318359 4.00781 2.59544 4.00781 5.39432C4.00781 7.12797 4.95332 8.66115 6.39253 9.57725C5.0488 10.0058 3.81722 10.7137 2.7825 11.67C0.988186 13.3284 0 15.5332 0 17.8784H1.48438C1.48438 13.7936 5.08016 10.4703 9.5 10.4703C13.9198 10.4703 17.5156 13.7936 17.5156 17.8784H19C19 15.5332 18.0118 13.3284 16.2175 11.67ZM9.5 9.0984C7.2901 9.0984 5.49219 7.43678 5.49219 5.39432C5.49219 3.35186 7.2901 1.69024 9.5 1.69024C11.7099 1.69024 13.5078 3.35186 13.5078 5.39432C13.5078 7.43678 11.7099 9.0984 9.5 9.0984Z" fill="black"></path>
+              </svg></a><a class="header-top__user-favorites" href="#"><span>3</span>
+              <svg width="20" height="17" viewbox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.8301 3.94937C18.5421 3.33311 18.1269 2.77466 17.6076 2.30528C17.088 1.8345 16.4753 1.46038 15.8029 1.20327C15.1057 0.93559 14.3579 0.798579 13.6029 0.800185C12.5438 0.800185 11.5104 1.06824 10.6123 1.57458C10.3975 1.6957 10.1934 1.82873 10 1.97368C9.80664 1.82873 9.60254 1.6957 9.3877 1.57458C8.48965 1.06824 7.45625 0.800185 6.39707 0.800185C5.63438 0.800185 4.89531 0.935207 4.19707 1.20327C3.52246 1.4614 2.91445 1.83271 2.39238 2.30528C1.87245 2.77413 1.45712 3.33271 1.16992 3.94937C0.871289 4.59073 0.71875 5.2718 0.71875 5.97272C0.71875 6.63393 0.864844 7.32294 1.15488 8.02386C1.39766 8.60962 1.7457 9.21722 2.19043 9.83077C2.89512 10.8017 3.86406 11.8144 5.06719 12.841C7.06094 14.5426 9.03535 15.7181 9.11914 15.7658L9.62832 16.0676C9.85391 16.2006 10.1439 16.2006 10.3695 16.0676L10.8787 15.7658C10.9625 15.7161 12.9348 14.5426 14.9307 12.841C16.1338 11.8144 17.1027 10.8017 17.8074 9.83077C18.2521 9.21722 18.6023 8.60962 18.843 8.02386C19.133 7.32294 19.2791 6.63393 19.2791 5.97272C19.2813 5.2718 19.1287 4.59073 18.8301 3.94937ZM10 14.497C10 14.497 2.35156 9.96778 2.35156 5.97272C2.35156 3.94937 4.1627 2.30925 6.39707 2.30925C7.96758 2.30925 9.32969 3.11939 10 4.30281C10.6703 3.11939 12.0324 2.30925 13.6029 2.30925C15.8373 2.30925 17.6484 3.94937 17.6484 5.97272C17.6484 9.96778 10 14.497 10 14.497Z" fill="#1E1E1E"></path>
+              </svg></a><a class="header-top__user-basket" href="#"><span>9</span>
+              <svg width="21" height="19" viewbox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.7188 14.2681H6.5625L3.28125 1.53125H1.3125M3.9375 3.95731H19.6875L17.7188 11.842H5.90625L3.9375 3.95731Z" stroke="#B11116" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M16.4062 17.9071C17.1311 17.9071 17.7188 17.364 17.7188 16.6941C17.7188 16.0242 17.1311 15.4811 16.4062 15.4811C15.6814 15.4811 15.0938 16.0242 15.0938 16.6941C15.0938 17.364 15.6814 17.9071 16.4062 17.9071Z" stroke="#B11116" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M7.875 17.9071C8.59987 17.9071 9.1875 17.364 9.1875 16.6941C9.1875 16.0242 8.59987 15.4811 7.875 15.4811C7.15013 15.4811 6.5625 16.0242 6.5625 16.6941C6.5625 17.364 7.15013 17.9071 7.875 17.9071Z" stroke="#B11116" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <div class="header-top__user-basket-text">
+                <p>Корзина</p>
+                <p>1 подарок</p>
+              </div></a></div>
+        </div>
+        <div class="header-search-mobile js_header_search_mobile_popup">
+          <div class="header-search-mobile__wrapper">
+            <input class="header-search-mobile__input js_header_search_mobile_input" type="text" arial-label="поиск по сайту">
+            <button class="header-search-mobile__button js_header_search_mobile_button" arial-label="поиск по сайту">Найти</button>
+          </div>
+        </div>
+        <div class="header-dropdown-menu js_header_dropdown_menu">
+          <div class="header-top__region">Ваш регион:<span class="js_header_top_region_city">Москва</span></div>
+          <svg class="header-dropdown-menu__close js_header_dropdown_menu_close" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+            <path d="M22 1.925L20.075 0L11 9.075L1.925 0L0 1.925L9.075 11L0 20.075L1.925 22L11 12.925L20.075 22L22 20.075L12.925 11L22 1.925Z" fill=""></path>
+          </svg>
+          <ul class="header-dropdown-menu__mobile-list">
+            <li class="header-dropdown-menu__mobile-list-item active"><a href="#">Женщинам</a></li>
+            <li class="header-dropdown-menu__mobile-list-item"><a href="#">Мужчинам</a></li>
+            <li class="header-dropdown-menu__mobile-list-item"><a href="#">Новинки</a></li>
+            <li class="header-dropdown-menu__mobile-list-item"><a href="#">Широкая колодка</a></li>
+            <li class="header-dropdown-menu__mobile-list-item salons"><a href="page-salons.html">Салоны</a></li>
+            <li class="header-dropdown-menu__mobile-list-item"><a href="#">% Акции</a></li>
+          </ul><a class="header-dropdown-menu__mobile-link" href="page-main.html"><span>Главная</span></a>
+          <div class="header-dropdown-menu__list first-list js_header_dropdown_menu_list">
+            <div class="header-dropdown-menu__list-title">Обувь</div>
+            <ul>
+              <li> <a href="#">Ботинки</a></li>
+              <li><a href="#">Полусапожки</a></li>
+              <li><a href="#">Сапоги</a></li>
+              <li><a href="#">Туфли</a></li>
+              <li><a href="#">Кроссовки</a></li>
+              <li><a href="#">Ботфорты</a></li>
+              <li><a href="#">Мокасины</a></li>
+              <li><a href="#">Спорт-актив</a></li>
+              <li><a href="#">Босоножки</a></li>
+              <li><a href="#">Сандалии</a></li>
+              <li><a href="#">Сабо</a></li>
+            </ul>
+          </div>
+          <div class="header-dropdown-menu__list second-list js_header_dropdown_menu_list">
+            <div class="header-dropdown-menu__list-title">Аксессуары</div>
+            <ul>
+              <li><a href="#">Поясные</a></li>
+              <li><a href="#">Сумки</a></li>
+              <li><a href="#">Кошельки</a></li>
+              <li><a href="#">Ремни</a></li>
+              <li><a href="#">Шарфы и платки</a></li>
+              <li><a href="#">Перчатки</a></li>
+              <li><a href="#">Стельки и полустельки</a></li>
+              <li><a href="#">Средства по уходу за обувью</a></li>
+            </ul>
+          </div>
+          <figure class="header-dropdown-menu__images"><img src="img/main-dropdown-menu.png" alt="картинка"><span>Модели сумок по самым лучшим ценам</span></figure>
+        </div>
+      </div>
+    </header>
+    <!-- ОСНОВНОЙ КОНТЕНТ-->
+    <section class="basket js_basket">
+      <div class="content-wrapper">
+        <h1 class="basket__title">Корзина</h1>
+        <div class="basket__subtitle">
+           Воспользуйтесь промокодом на сумму <span>500₽</span>на ваш первый заказ
+          <button>Скопировать промокод</button>
+        </div>
+        <div class="basket-wrap">
+          <div class="basket-cnt">
+            <div class="basket-cnt-product js_basket_cnt_product">
+              <div class="basket-cnt-product__close js_basket_cnt_product_close"></div>
+              <div class="basket-cnt-product__descr"><img class="basket-cnt-product__descr-images" src="img/product-card-popup.png" alt="фото товара">
+                <div class="basket-cnt-product__descr-text"><span>Артикул: N48G1-80</span><span>Женские летние кроссовки</span><span>BADEN BADEN</span>
+                  <div class="basket-cnt-product__descr-text-heart js_basket_cnt_product_descr_text_heart"></div>
+                </div>
+              </div>
+              <div class="basket-cnt-product__size"> <span>Размер</span><span>36</span></div>
+              <div class="basket-cnt-product__price">
+                <div class="basket-cnt-product__price-quantity"> <span>Кол-во</span><span class="js_basket_cnt_product_price_quantity_minus">
+                    <svg width="5" height="2" viewbox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64122 1.216C3.92922 1.216 4.01322 1 4.01322 0.796C4.01322 0.58 3.92922 0.364 3.64122 0.364H1.36122C1.06122 0.364 0.989219 0.58 0.989219 0.796C0.989219 1 1.06122 1.216 1.36122 1.216H3.64122Z" fill="#1E1E1E"></path>
+                    </svg></span><span class="js_basket_cnt_product_price_quantity_number">1</span><span class="js_basket_cnt_product_price_quantity_plus">
+                    <svg width="7" height="7" viewbox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.9223 1.232C3.9223 0.944 3.7183 0.86 3.5023 0.86C3.2863 0.86 3.0823 0.944 3.0823 1.232V3.368H0.946297C0.658297 3.368 0.574297 3.572 0.574297 3.788C0.574297 4.004 0.658297 4.208 0.946297 4.208H3.0823V6.344C3.0823 6.632 3.2863 6.716 3.5023 6.716C3.7183 6.716 3.9223 6.632 3.9223 6.344V4.208H6.0583C6.3583 4.208 6.4303 4.004 6.4303 3.788C6.4303 3.572 6.3583 3.368 6.0583 3.368H3.9223V1.232Z" fill="#1E1E1E"></path>
+                    </svg></span></div>
+                <div class="basket-cnt-product__price-price"><span>Цена</span><span>2 095 ₽ </span><span>2 095 ₽ </span></div>
+              </div>
+            </div>
+            <div class="basket-cnt-product js_basket_cnt_product">
+              <div class="basket-cnt-product__close js_basket_cnt_product_close"></div>
+              <div class="basket-cnt-product__descr"><img class="basket-cnt-product__descr-images" src="img/basket-product-img1.png" alt="фото товара">
+                <div class="basket-cnt-product__descr-text"><span>Артикул: N48G1-80</span><span>Женские летние кроссовки</span><span>BADEN BADEN</span>
+                  <div class="basket-cnt-product__descr-text-heart js_basket_cnt_product_descr_text_heart"></div>
+                </div>
+              </div>
+              <div class="basket-cnt-product__size"><span>Размер</span><span>36</span></div>
+              <div class="basket-cnt-product__price">
+                <div class="basket-cnt-product__price-quantity"> <span>Кол-во</span><span class="js_basket_cnt_product_price_quantity_minus">
+                    <svg width="5" height="2" viewbox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64122 1.216C3.92922 1.216 4.01322 1 4.01322 0.796C4.01322 0.58 3.92922 0.364 3.64122 0.364H1.36122C1.06122 0.364 0.989219 0.58 0.989219 0.796C0.989219 1 1.06122 1.216 1.36122 1.216H3.64122Z" fill="#1E1E1E"></path>
+                    </svg></span><span class="js_basket_cnt_product_price_quantity_number">1</span><span class="js_basket_cnt_product_price_quantity_plus">
+                    <svg width="7" height="7" viewbox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.9223 1.232C3.9223 0.944 3.7183 0.86 3.5023 0.86C3.2863 0.86 3.0823 0.944 3.0823 1.232V3.368H0.946297C0.658297 3.368 0.574297 3.572 0.574297 3.788C0.574297 4.004 0.658297 4.208 0.946297 4.208H3.0823V6.344C3.0823 6.632 3.2863 6.716 3.5023 6.716C3.7183 6.716 3.9223 6.632 3.9223 6.344V4.208H6.0583C6.3583 4.208 6.4303 4.004 6.4303 3.788C6.4303 3.572 6.3583 3.368 6.0583 3.368H3.9223V1.232Z" fill="#1E1E1E"></path>
+                    </svg></span></div>
+                <div class="basket-cnt-product__price-price"><span>Цена</span><span>2 095 ₽ </span><span>2 095 ₽ </span></div>
+              </div>
+            </div>
+            <div class="basket-cnt-product js_basket_cnt_product">
+              <div class="basket-cnt-product__close js_basket_cnt_product_close"></div>
+              <div class="basket-cnt-product__descr"><img class="basket-cnt-product__descr-images" src="img/basket-product-img2.png" alt="фото товара">
+                <div class="basket-cnt-product__descr-text"><span>Артикул: N48G1-80</span><span>Женские летние кроссовки</span><span>BADEN BADEN</span>
+                  <div class="basket-cnt-product__descr-text-heart js_basket_cnt_product_descr_text_heart"></div>
+                </div>
+              </div>
+              <div class="basket-cnt-product__size"><span>Размер</span><span>36</span></div>
+              <div class="basket-cnt-product__price">
+                <div class="basket-cnt-product__price-quantity"> <span>Кол-во</span><span class="js_basket_cnt_product_price_quantity_minus">
+                    <svg width="5" height="2" viewbox="0 0 5 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64122 1.216C3.92922 1.216 4.01322 1 4.01322 0.796C4.01322 0.58 3.92922 0.364 3.64122 0.364H1.36122C1.06122 0.364 0.989219 0.58 0.989219 0.796C0.989219 1 1.06122 1.216 1.36122 1.216H3.64122Z" fill="#1E1E1E"></path>
+                    </svg></span><span class="js_basket_cnt_product_price_quantity_number">1</span><span class="js_basket_cnt_product_price_quantity_plus">
+                    <svg width="7" height="7" viewbox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.9223 1.232C3.9223 0.944 3.7183 0.86 3.5023 0.86C3.2863 0.86 3.0823 0.944 3.0823 1.232V3.368H0.946297C0.658297 3.368 0.574297 3.572 0.574297 3.788C0.574297 4.004 0.658297 4.208 0.946297 4.208H3.0823V6.344C3.0823 6.632 3.2863 6.716 3.5023 6.716C3.7183 6.716 3.9223 6.632 3.9223 6.344V4.208H6.0583C6.3583 4.208 6.4303 4.004 6.4303 3.788C6.4303 3.572 6.3583 3.368 6.0583 3.368H3.9223V1.232Z" fill="#1E1E1E"></path>
+                    </svg></span></div>
+                <div class="basket-cnt-product__price-price"><span>Цена</span><span>2 095 ₽ </span><span>2 095 ₽ </span></div>
+              </div>
+            </div>
+            <!-- доставка-->
+            <div class="basket-cnt-delivery"> 
+              <div class="basket-cnt__title">Доставка</div>
+              <div class="basket-cnt-delivery-wrap">
+                <div class="basket-cnt-delivery__item">
+                  <input type="radio" name="free" id="free" checked>
+                  <label class="basket-cnt-delivery__item-block" for="free"> 
+                    <div class="basket-cnt-delivery__item-block-icon">
+                      <svg width="9" height="9" viewbox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.746151" y="0.746151" width="7.10777" height="7.10777" rx="3.55389" fill="#EB5757" stroke="#EB5757" stroke-width="0.507698"></rect>
+                      </svg>
+                    </div>
+                    <div class="basket-cnt-delivery__item-block-title">Доставка курьером (Бесплатно)</div>
+                    <div class="basket-cnt-delivery__item-block-text">Оплата производится в момент получения заказа.</div>
+                  </label>
+                </div>
+                <div class="basket-cnt-delivery__item">
+                  <input type="radio" name="free" id="pickup">
+                  <label class="basket-cnt-delivery__item-block" for="pickup"> 
+                    <div class="basket-cnt-delivery__item-block-icon">
+                      <svg width="9" height="9" viewbox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.746151" y="0.746151" width="7.10777" height="7.10777" rx="3.55389" fill="#EB5757" stroke="#EB5757" stroke-width="0.507698"></rect>
+                      </svg>
+                    </div>
+                    <div class="basket-cnt-delivery__item-block-title">Доставка (Самовызов)</div>
+                    <div class="basket-cnt-delivery__item-block-text">Оплата производится на сайте картами VISA или MasterCard через платежную систему Сбербанк </div>
+                  </label>
+                </div>
+                <div class="basket-cnt-delivery__item">
+                  <input type="radio" name="free" id="pvz">
+                  <label class="basket-cnt-delivery__item-block" for="pvz">
+                    <div class="basket-cnt-delivery__item-block-icon">
+                      <svg width="9" height="9" viewbox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.746151" y="0.746151" width="7.10777" height="7.10777" rx="3.55389" fill="#EB5757" stroke="#EB5757" stroke-width="0.507698"></rect>
+                      </svg>
+                    </div>
+                    <div class="basket-cnt-delivery__item-block-title">СДЕК (ПВЗ)</div>
+                    <div class="basket-cnt-delivery__item-block-text">Оплата производится в момент получения заказа.</div>
+                  </label>
+                </div>
+                <div class="basket-cnt-delivery__item">
+                  <input type="radio" name="free" id="courier">
+                  <label class="basket-cnt-delivery__item-block" for="courier"> 
+                    <div class="basket-cnt-delivery__item-block-icon">
+                      <svg width="9" height="9" viewbox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.746151" y="0.746151" width="7.10777" height="7.10777" rx="3.55389" fill="#EB5757" stroke="#EB5757" stroke-width="0.507698"></rect>
+                      </svg>
+                    </div>
+                    <div class="basket-cnt-delivery__item-block-title">СДЕК (Курьерская)</div>
+                    <div class="basket-cnt-delivery__item-block-text">Оплата производится в момент получения заказа.</div>
+                  </label>
+                </div>
+                <div class="basket-cnt-delivery__item">
+                  <input type="radio" name="free" id="post">
+                  <label class="basket-cnt-delivery__item-block" for="post">
+                    <div class="basket-cnt-delivery__item-block-icon"> 
+                      <svg width="9" height="9" viewbox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.746151" y="0.746151" width="7.10777" height="7.10777" rx="3.55389" fill="#EB5757" stroke="#EB5757" stroke-width="0.507698"></rect>
+                      </svg>
+                    </div>
+                    <div class="basket-cnt-delivery__item-block-title">Почта России</div>
+                    <div class="basket-cnt-delivery__item-block-text">Оплата производится на сайте картами VISA или MasterCard через платежную систему Сбербанк </div>
+                  </label>
+                </div>
+              </div>
+              <div class="basket-cnt-delivery-text">
+                <p>
+                   Наш вежливый и обоятельный курьер доставит Вам заказ в любое удобное для Вас место и время
+                  При оплате на сайте заказа на сумму от 4 000р. ДОСТАВКА БЕСПЛАТНАЯ!
+                </p>
+                <p>У Вас есть возможномть бесплатной примерки перед покупкой! И если вам ничего не подошло, просто отдайте заказ курьеру, оплатив только доставку.</p><span> Стоимость:   </span>
+                <p>385 руб.</p><span>Срок доставки:</span>
+                <p>3-5 дней</p>
+              </div>
+            </div>
+            <!-- оплата-->
+            <div class="basket-cnt-pay">
+              <div class="basket-cnt__title">Оплата</div>
+              <div class="basket-cnt-pay__wrap">
+                <div class="basket-cnt-delivery__item">
+                  <input type="radio" name="pay" id="cash" checked>
+                  <label class="basket-cnt-delivery__item-block" for="cash"> 
+                    <div class="basket-cnt-delivery__item-block-icon">
+                      <svg width="9" height="9" viewbox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.746151" y="0.746151" width="7.10777" height="7.10777" rx="3.55389" fill="#EB5757" stroke="#EB5757" stroke-width="0.507698"></rect>
+                      </svg>
+                    </div>
+                    <div class="basket-cnt-delivery__item-block-title">Оплата наличными или картой</div>
+                    <div class="basket-cnt-delivery__item-block-text">Оплата производится в момент получения заказа.</div>
+                  </label>
+                </div>
+                <div class="basket-cnt-delivery__item">
+                  <input type="radio" name="pay" id="card">
+                  <label class="basket-cnt-delivery__item-block" for="card"> 
+                    <div class="basket-cnt-delivery__item-block-icon">
+                      <svg width="9" height="9" viewbox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.746151" y="0.746151" width="7.10777" height="7.10777" rx="3.55389" fill="#EB5757" stroke="#EB5757" stroke-width="0.507698"></rect>
+                      </svg>
+                    </div>
+                    <div class="basket-cnt-delivery__item-block-title">Онлайн-оплата на сайте</div>
+                    <div class="basket-cnt-delivery__item-block-text">Оплата производится на сайте картами VISA или MasterCard через платежную систему Сбербанк </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!--контактные данные-->
+            <div class="basket-cnt-contacts">
+              <div class="basket-cnt__title">Контактные данные</div>
+              <div class="basket-cnt-contacts__new-user">
+                <div class="basket-cnt-contacts__new-user-title">Я новый пользователь</div>
+                <button class="basket-cnt-contacts__new-user-button">Войти</button>
+              </div>
+              <div class="basket-cnt-contacts__data">
+                <input class="basket-cnt__input" type="text" placeholder="Ф.И.О.*">
+                <input class="basket-cnt__input" type="email" placeholder="E-mail *">
+                <input class="basket-cnt__input" type="tel"  placeholder="Телефон *">
+              </div>
+            </div>
+            <div class="basket-cnt-adress">
+              <div class="basket-cnt__title">Адрес доставки</div>
+              <input class="basket-cnt__input" type="text" placeholder="Город *">
+              <input class="basket-cnt__input" type="text" placeholder="Улица *">
+              <input class="basket-cnt__input" type="text" placeholder="Дом, корпус, строение *">
+              <div class="basket-cnt-adress__wrap">
+                <input class="basket-cnt__input" type="text" placeholder="Кв/офис">
+                <input class="basket-cnt__input" type="text" placeholder="Подъезд">
+                <input class="basket-cnt__input" type="text" placeholder="Этаж">
+                <input class="basket-cnt__input" type="text" placeholder="Домофон">
+              </div>
+              <textarea class="basket-cnt-adress__message" name="message" cols="30" rows="3" placeholder="Комментарий к заказу (необязательно)"></textarea>
+            </div>
+          </div>
+          <div class="basket-rigistration js_basket_rigistration">
+            <form class="basket-rigistration__promo">
+              <div class="basket-rigistration__promo-title">Промокод</div>
+              <input class="basket-rigistration__promo-input" type="text" placeholder="Введите промокод">
+              <button class="basket-rigistration__promo-button">Активировать промокод</button>
+            </form>
+            <div class="basket-rigistration__descr">
+              <div class="basket-rigistration__descr-title">Общая стоимость:</div>
+              <div class="basket-rigistration__descr-text"><span>Товары:</span><span>6 285 ₽ </span></div>
+              <div class="basket-rigistration__descr-text sale"><span>Скидка:</span><span>- 1 645 ₽ </span></div>
+              <div class="basket-rigistration__descr-text"><span>Доставка:</span><span>0 ₽</span></div>
+              <div class="basket-rigistration__descr-text"><span>Итоговая сумма:</span><span>4 285 ₽ </span></div>
+              <div class="basket-rigistration__descr-agreement">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement">Согласен <a href="#"> на обработку персональных данных</a></label>
+              </div>
+              <button class="basket-rigistration__descr-button">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer-->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-top">
+          <div class="footer-top-logo">
+            <div class="footer-top-logo__images"><img src="img/logo.svg" alt="логотип"></div>
+            <div class="footer-top-logo__social"><a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M17.9827 5.29217C17.9405 4.33576 17.7859 3.67824 17.5643 3.10849C17.3357 2.50371 16.9841 1.96225 16.5234 1.51214C16.0733 1.05502 15.5283 0.699813 14.9305 0.474824C14.3575 0.253269 13.7034 0.0986063 12.747 0.056438C11.7834 0.0106985 11.4775 0.00012207 9.03368 0.00012207C6.58984 0.00012207 6.28395 0.0106985 5.32397 0.0528667C4.36756 0.095035 3.71004 0.249835 3.14042 0.471253C2.53551 0.699813 1.99405 1.05144 1.54393 1.51214C1.08681 1.96225 0.731749 2.50728 0.506623 3.10505C0.285068 3.67824 0.130406 4.33219 0.0882373 5.2886C0.0424978 6.25215 0.0319214 6.55804 0.0319214 9.00188C0.0319214 11.4457 0.0424978 11.7516 0.084666 12.7116C0.126834 13.668 0.281634 14.3255 0.503189 14.8953C0.731749 15.5001 1.08681 16.0415 1.54393 16.4916C1.99405 16.9487 2.53908 17.3039 3.13685 17.5289C3.71004 17.7505 4.36399 17.9052 5.32053 17.9473C6.28038 17.9896 6.58641 18.0001 9.03024 18.0001C11.4741 18.0001 11.78 17.9896 12.7399 17.9473C13.6964 17.9052 14.3539 17.7505 14.9235 17.5289C16.1332 17.0612 17.0896 16.1048 17.5573 14.8953C17.7787 14.3221 17.9335 13.668 17.9757 12.7116C18.0178 11.7516 18.0284 11.4457 18.0284 9.00188C18.0284 6.55804 18.0249 6.25215 17.9827 5.29217ZM16.3617 12.6413C16.323 13.5203 16.1754 13.995 16.0523 14.3115C15.7498 15.0957 15.1275 15.718 14.3433 16.0205C14.0268 16.1436 13.5487 16.2912 12.6731 16.3298C11.7237 16.3721 11.4389 16.3826 9.03725 16.3826C6.63558 16.3826 6.34727 16.3721 5.4013 16.3298C4.52222 16.2912 4.04752 16.1436 3.73105 16.0205C3.34082 15.8763 2.98562 15.6477 2.69731 15.3488C2.39843 15.0569 2.16987 14.7053 2.02564 14.3151C1.90257 13.9986 1.75491 13.5203 1.71632 12.6448C1.67401 11.6954 1.66357 11.4106 1.66357 9.00889C1.66357 6.60722 1.67401 6.31891 1.71632 5.37307C1.75491 4.494 1.90257 4.01929 2.02564 3.70283C2.16987 3.31246 2.39843 2.9574 2.70088 2.66895C2.99263 2.37006 3.34426 2.1415 3.73462 1.99741C4.05109 1.87434 4.52936 1.72669 5.40487 1.68795C6.35427 1.64578 6.63915 1.63521 9.04068 1.63521C11.4459 1.63521 11.7307 1.64578 12.6766 1.68795C13.5557 1.72669 14.0304 1.87434 14.3469 1.99741C14.7371 2.1415 15.0923 2.37006 15.3806 2.66895C15.6795 2.96083 15.9081 3.31246 16.0523 3.70283C16.1754 4.01929 16.323 4.49743 16.3617 5.37307C16.4039 6.32248 16.4145 6.60722 16.4145 9.00889C16.4145 11.4106 16.4039 11.6919 16.3617 12.6413Z" fill="black"/>
+<path d="M9.03374 4.37781C6.48098 4.37781 4.40979 6.44886 4.40979 9.00176C4.40979 11.5547 6.48098 13.6257 9.03374 13.6257C11.5866 13.6257 13.6577 11.5547 13.6577 9.00176C13.6577 6.44886 11.5866 4.37781 9.03374 4.37781ZM9.03374 12.0012C7.37764 12.0012 6.0343 10.658 6.0343 9.00176C6.0343 7.34552 7.37764 6.00232 9.03374 6.00232C10.69 6.00232 12.0332 7.34552 12.0332 9.00176C12.0332 10.658 10.69 12.0012 9.03374 12.0012Z" fill="black"/>
+<path d="M14.9201 4.19508C14.9201 4.79121 14.4367 5.27456 13.8405 5.27456C13.2443 5.27456 12.761 4.79121 12.761 4.19508C12.761 3.59882 13.2443 3.1156 13.8405 3.1156C14.4367 3.1156 14.9201 3.59882 14.9201 4.19508Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="18" height="18" fill="white"/>
+</clipPath>
+</defs>
+</svg></a><a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M9.10912 14.625C11.7131 14.625 10.7846 12.9765 10.9856 12.5025C10.9826 12.1485 10.9796 11.808 10.9916 11.601C11.1566 11.6475 11.5459 11.8447 12.3499 12.6262C13.5911 13.8787 13.9084 14.625 14.9111 14.625H16.7569C17.3419 14.625 17.6464 14.3828 17.7986 14.1795C17.9456 13.983 18.0896 13.638 17.9321 13.101C17.5204 11.808 15.1189 9.57525 14.9696 9.33975C14.9921 9.29625 15.0281 9.2385 15.0469 9.2085H15.0454C15.5194 8.58225 17.3284 5.87175 17.5946 4.78725C17.5954 4.78575 17.5961 4.7835 17.5961 4.78125C17.7401 4.28625 17.6081 3.96525 17.4716 3.78375C17.2661 3.51225 16.9391 3.375 16.4974 3.375H14.6516C14.0336 3.375 13.5649 3.68625 13.3279 4.254C12.9311 5.26275 11.8166 7.33725 10.9811 8.0715C10.9556 7.03125 10.9729 6.237 10.9864 5.64675C11.0134 4.4955 11.1004 3.375 9.90562 3.375H7.00462C6.25612 3.375 5.53987 4.1925 6.31537 5.163C6.99337 6.0135 6.55912 6.4875 6.70537 8.847C6.13537 8.23575 5.12137 6.585 4.40437 4.47525C4.20337 3.9045 3.89887 3.37575 3.04162 3.37575H1.19587C0.447366 3.37575 0.000366211 3.78375 0.000366211 4.467C0.000366211 6.0015 3.39712 14.625 9.10912 14.625ZM3.04162 4.50075C3.20437 4.50075 3.22087 4.50075 3.34162 4.8435C4.07587 7.00575 5.72287 10.2053 6.92587 10.2053C7.82962 10.2053 7.82962 9.279 7.82962 8.93025L7.82887 6.15375C7.77937 5.235 7.44487 4.7775 7.22512 4.5L9.85612 4.503C9.85762 4.51575 9.84112 7.57425 9.86362 8.31525C9.86362 9.3675 10.6991 9.9705 12.0034 8.6505C13.3796 7.09725 14.3314 4.77525 14.3696 4.68075C14.4259 4.54575 14.4746 4.5 14.6516 4.5H16.4974H16.5049C16.5041 4.50225 16.5041 4.5045 16.5034 4.50675C16.3346 5.29425 14.6689 7.80375 14.1116 8.583C14.1026 8.595 14.0944 8.60775 14.0861 8.6205C13.8409 9.021 13.6414 9.4635 14.1199 10.086H14.1206C14.1641 10.1385 14.2774 10.2615 14.4424 10.4325C14.9554 10.962 16.7149 12.7725 16.8709 13.4925C16.7674 13.509 16.6549 13.497 14.9111 13.5007C14.5399 13.5007 14.2496 12.9458 13.1419 11.8282C12.1459 10.8593 11.4994 10.4633 10.9106 10.4633C9.76762 10.4633 9.85087 11.391 9.86137 12.513C9.86512 13.7295 9.85762 13.3448 9.86587 13.4213C9.79912 13.4475 9.60787 13.5 9.10912 13.5C4.35037 13.5 1.25137 5.94675 1.13212 4.503C1.17337 4.49925 1.74112 4.5015 3.04162 4.50075Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="18" height="18" fill="white"/>
+</clipPath>
+</defs>
+</svg></a><a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M5.10876 10.4528H6.99726V17.4368C6.99726 17.7472 7.24851 17.9993 7.55976 17.9993L10.565 18C10.8763 18 11.1275 17.7472 11.1275 17.4375V10.4535H12.9178C13.2013 10.4535 13.4405 10.242 13.4758 9.96075L13.8493 6.96075C13.8913 6.62625 13.6295 6.3285 13.2913 6.3285H11.1275C11.2123 4.47525 10.8013 3.927 12.0065 3.927C12.8225 3.8295 14.1095 4.24275 14.1095 3.3645V0.68175C14.1095 0.4005 13.9018 0.16275 13.6235 0.1245C13.388 0.09225 12.4573 0 11.303 0C6.04552 0 7.12776 5.829 6.99801 6.32775H5.10876C4.79826 6.32775 4.54626 6.57975 4.54626 6.89025V9.89025C4.54626 10.2008 4.79826 10.4528 5.10876 10.4528ZM5.67126 7.4535H7.55976C7.87026 7.4535 8.12226 7.2015 8.12226 6.891V4.52775C8.12226 2.3655 9.28101 1.12575 11.3023 1.12575C11.9608 1.12575 12.5668 1.158 12.9838 1.191V2.80275C12.6823 2.9565 10.0018 2.13975 10.0018 4.8255V6.89175C10.0018 7.20225 10.2538 7.45425 10.5643 7.45425H12.6538L12.4198 9.32925H10.5643C10.2538 9.32925 10.0018 9.58125 10.0018 9.89175V16.875H8.12301V9.891C8.12301 9.5805 7.87102 9.3285 7.56051 9.3285H5.67126V7.4535Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="18" height="18" fill="white"/>
+</clipPath>
+</defs>
+</svg></a><a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M14.4173 9.36327C13.9628 8.47602 12.8566 8.13927 11.7736 8.99052C11.7631 8.99877 10.6906 9.82152 9.00234 9.82152C7.31409 9.82152 6.24159 8.99802 6.23109 8.99052C5.15259 8.13852 4.03734 8.47227 3.58584 9.36552C3.58434 9.36777 3.58359 9.37002 3.58209 9.37302C2.91084 10.7463 4.01934 11.4618 4.91109 12.037C5.46234 12.3918 6.16734 12.6595 7.01409 12.8365L4.61034 15.2455C3.15909 16.6938 5.43309 18.979 6.89934 17.5458L9.00984 15.4248C9.82209 16.2385 10.5788 16.9983 11.1248 17.554C12.5723 18.9753 14.8613 16.7298 13.4183 15.2485C11.6971 13.5288 11.3266 13.1575 11.0011 12.8373C12.7981 12.4525 15.2978 11.1918 14.4173 9.36327ZM9.89859 11.8795C9.51009 11.6928 8.99409 12.4023 9.41859 12.8433L9.42309 12.8478C9.42384 12.8485 9.42534 12.85 9.42609 12.8508C9.42759 12.8523 9.42834 12.8538 9.42984 12.8545C9.64584 13.0698 12.5521 15.973 12.6166 16.0383C13.0201 16.453 12.3091 17.1385 11.9183 16.7575C11.2208 16.048 10.1146 14.9403 9.40584 14.23C9.18684 14.0103 8.82909 14.0088 8.60934 14.23L6.10584 16.7455C5.70909 17.1333 5.00184 16.441 5.40384 16.0398L8.58684 12.8508C8.58834 12.8493 8.58984 12.8478 8.59059 12.8463C8.98584 12.4578 8.58684 11.7378 8.12184 11.875C7.01409 11.7453 6.11634 11.4745 5.51859 11.0905C4.36359 10.3443 4.42134 10.213 4.58859 9.87027C5.07459 8.93952 5.93559 10.9465 9.00084 10.9465C11.1001 10.9465 12.4171 9.91527 12.4688 9.87402C12.8108 9.60552 13.2121 9.48027 13.4093 9.86352C13.5766 10.2108 13.6388 10.3405 12.4808 11.0928C11.6903 11.596 10.5728 11.7993 9.89859 11.8795Z" fill="black"/>
+<path d="M8.99934 7.49791C10.4648 7.49791 11.6566 6.30391 11.6566 4.83691C11.6566 3.36391 10.4648 2.16541 8.99934 2.16541C7.53459 2.16541 6.34283 3.36391 6.34283 4.83691C6.34208 6.30391 7.53384 7.49791 8.99934 7.49791ZM8.99934 3.29041C9.84384 3.29041 10.5316 3.98416 10.5316 4.83691C10.5316 5.68366 9.84384 6.37291 8.99934 6.37291C8.15484 6.37291 7.46709 5.68366 7.46709 4.83616C7.46709 3.98416 8.15409 3.29041 8.99934 3.29041Z" fill="black"/>
+<path d="M8.99969 9.66225C11.6614 9.66225 13.8274 7.497 13.8274 4.836C13.8267 2.16975 11.6614 0 8.99969 0C6.33794 0 4.17194 2.16975 4.17194 4.836C4.17194 7.497 6.33719 9.66225 8.99969 9.66225ZM8.99969 1.125C11.0412 1.125 12.7024 2.79 12.7024 4.836C12.7024 6.87675 11.0419 8.53725 8.99969 8.53725C6.95744 8.53725 5.29694 6.87675 5.29694 4.836C5.29694 2.79 6.95744 1.125 8.99969 1.125Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="18" height="18" fill="white"/>
+</clipPath>
+</defs>
+</svg></a></div>
+          </div>
+          <div class="footer-top-link-desktop">
+            <ul class="footer-top-link__list-desktop footer-top-link__list-desktop-1">
+              <li><a href="page-payment.html">Доставка и оплата</a></li>
+              <li><a href="page-salons.html">Салоны</a></li>
+              <li><a href="page-about.html">О нас</a></li>
+              <li><a href="#">Частые вопросы</a></li>
+              <li><a href="#">Присоединяйтесь к <br> нашей команде</a></li>
+              <li><a href="#">Франчайзинг</a></li>
+              <ul class="footer-top-link__list-desktop footer-top-link__list-desktop-1_1">
+                <li><a href="page-fitting.html">Бонусная система</a></li>
+                <li> <a href="page-ordering.html">Оптовым покупателям</a></li>
+              </ul>
+            </ul>
+            <ul class="footer-top-link__list-desktop footer-top-link__list-desktop-2">
+              <li><a href="page-fitting.html">Бонусная программа</a></li>
+              <li> <a href="page-ordering.html">Возврат</a></li>
+              <li><a href="page-purchase-returns.html">Карта сайта</a></li>
+              <li><a href="#">Примерка</a></li>
+              <li><a href="#">Как оформить заказ</a></li>
+              <li><a href="#">Возврат товара</a></li>
+              <ul class="footer-top-link__list-desktop footer-top-link__list-desktop-2_4">
+                <div class="footer-top-link__info-title">Интернет - магазин</div>
+                <div class="footer-top-link__info-telephone">
+                  <p>8 800 550 89 48</p>
+                  <p>10:00 - 20:00</p>
+                </div>
+              </ul>
+              <div class="footer-top-link__info-pay-list-desktop-2">
+                <div class="footer-top-link__info-pay-icon footer-top-link__info-pay-icon-visa"><img src="img/footer-icon-visa.svg" alt=""></div>
+                <div class="footer-top-link__info-pay-icon footer-top-link__info-pay-icon-mastercard"><img src="img/footer-icon-mastercard.svg" alt=""></div>
+                <div class="footer-top-link__info-pay-icon footer-top-link__info-pay-icon-sber"><img src="img/footer-icon-sber.svg" alt=""></div>
+              </div>
+            </ul>
+            <ul class="footer-top-link__list-desktop footer-top-link__list-desktop-3">
+              <li><a href="page-fitting.html">Бонусная система</a></li>
+              <li> <a href="page-ordering.html">Оптовым покупателям</a></li>
+            </ul>
+            <ul class="footer-top-link__list-desktop footer-top-link__list-desktop-4">
+              <div class="footer-top-link__info-title">Интернет - магазин</div>
+              <div class="footer-top-link__info-telephone">
+                <p>8 800 550 89 48</p>
+                <p>10:00 - 20:00</p>
+              </div>
+              <div class="footer-top-link__info-pay">
+                <div class="footer-top-link__info-pay-icon footer-top-link__info-pay-icon-visa"><img src="img/footer-icon-visa.svg" alt=""></div>
+                <div class="footer-top-link__info-pay-icon footer-top-link__info-pay-icon-mastercard"><img src="img/footer-icon-mastercard.svg" alt=""></div>
+                <div class="footer-top-link__info-pay-icon footer-top-link__info-pay-icon-sber"><img src="img/footer-icon-sber.svg" alt=""></div>
+              </div>
+            </ul>
+            <ul class="footer-top-link__list-desktop footer-top-link__list-desktop-5">
+              <form class="footer-top-subscribe footer-top-subscribe-desktop" method="#" name="subscribe-email">
+                <div class="footer-top-subscribe__title"> Подписаться на рассылку</div>
+                <div class="footer-top-subscribe__input-wrap">
+                  <input class="footer-top-subscribe__input" type="email" name="footer-email-consent" placeholder="Ваш e-mail">
+                  <button class="footer-top-subscribe__button mobile">ОК</button>
+                  <button class="footer-top-subscribe__button">Подписаться</button>
+                </div>
+                <div class="footer-top-subscribe__consent">
+                  <input type="checkbox" name="footer-consent" id="footer-consent" checked>
+                  <label for="footer-consent">
+                     Я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с <a href="#">политикой конфиденциальности. </a></label>
+                </div>
+              </form>
+            </ul>
+          </div>
+          <form class="footer-top-subscribe footer-top-subscribe-mobile" method="#" name="subscribe-email">
+            <div class="footer-top-subscribe__title"> Подписаться на рассылку</div>
+            <div class="footer-top-subscribe__input-wrap">
+              <input class="footer-top-subscribe__input" type="email" name="footer-email-consent" placeholder="Ваш e-mail">
+              <button class="footer-top-subscribe__button mobile">ОК</button>
+              <button class="footer-top-subscribe__button">Подписаться</button>
+            </div>
+            <div class="footer-top-subscribe__consent">
+              <input type="checkbox" name="footer-consent" id="footer-consent" checked>
+              <label for="footer-consent">
+                 Я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с <a href="#">политикой конфиденциальности. </a></label>
+            </div>
+          </form>
+        </div>
+        <div class="footer-bottom"> 
+          <div class="footer-bottom__right">© 2021 Все права защищены.</div>
+          <div class="footer-bottom__developer"> 
+            <div class="footer-bottom__developer-logo"> <a href="https://nologostudio.ru/"> 
+                <svg width="24" height="31" viewbox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20 31.001V26.001H24V31.001H20ZM23 27H21V30.001H23V27ZM19 14L23.985 14.018L24 24.001H19V14ZM20 23.001H23V15.003L20 15V23.001ZM13 0H24V12H13V0ZM15 10.001H22V2.001H15V10.001ZM17 15H13V23.001H16V20L15.015 19.987L15 19.001H17V24.001H12V14H17V15ZM8 31.001V26.001H9V30.001H11V26.001L11.998 26.003L12 31.001H8ZM9 2.001H2V12H0V0H11V12H9V2.001ZM0 29.004V26.001H3V27H1V28H3V31.001H0V30.004L2 30.001L1.992 29.004H0ZM4 24.001H0V14L1.015 14.018L1 23.001H4V24.001ZM5 14H10V24.001H5V14ZM6 23.001H9V15.003L6 15V23.001ZM7 27H6V31.001H5V27H4V26.001H7V27ZM15.999 27.004L17 27V30.001L15.999 29.984V27.004ZM16 27H14V30.001H16V31.001H13V26.001H16V27ZM19 31.001H18V26.001H19V31.001Z" fill="#A1A7B3"></path>
+                </svg></a></div>
+            <div class="footer-bottom__developer-text"><span>Разработка сайта:</span><a href="https://nologostudio.ru/">nologostudio.ru</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-buttons"><a class="footer-buttons__telephone" href="#"> </a><a class="footer-buttons__message" href="#"> </a>
+        <div class="footer-buttons__top js_footer_buttons_top_scroll"></div>
+      </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
